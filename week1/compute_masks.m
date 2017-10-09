@@ -53,34 +53,7 @@ for i=1:length(test_files)
                 error('The segmentation type is not valid');
         end
          
-        % The mask can be refined with POST-PROCESSING
-        % (1) The minimum and maximum size of each type of signal is known,
-        %     so a min. and a max. amount of pixels that a reasonable 
-        %     signal would accupy can be stablished to filter all the
-        %     connected components in the mask outside of this range
-        if strcmp(size_filt,'Yes')
-                labels = bwlabel(final_mask); % label connected components
-                for j=1:max(max(labels)) % iterate through all components
-                    % if the area of the component is smaller than the 
-                    % minimum expected size or bigger than the maximum
-                    % expected size, then this component is most probably
-                    % not a signal and can be erased from the mask
-                    if sum(sum(labels==j))<200 || sum(sum(labels==j))>60000
-                        labels(labels==j)=0;
-                    end
-                end
-                final_mask = labels>0;
-        end
-        % (2) Color segmentation is used to detect red and blue, which are
-        %     the colors that stand out when it comes to traffic signals.
-        %     However, some signals have white/black parts in the middle.
-        %     The white/black parts are not detected with color seg. but
-        %     these regions of the mask can be filled (with the buit-in 
-        %     function 'imfill'). A hole is defined as an area of dark 
-        %     pixels (value 0) surrounded by lighter pixels (value 1).
-        if strcmp(hole_fill,'Yes')
-                final_mask = imfill(final_mask,'holes');
-        end
+      
         
         masks{i} = final_mask; % store current mask
         
