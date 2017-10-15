@@ -22,6 +22,6 @@
     The different strategies that we used to solve each task are commented in detail in the scripts. 
     In order to generate the masks for the test split, execute the 'test_methodX.m' scripts.
     
-    test_method1: HCbCr color segmentation with hand picked thresholds + post-processing
-    test_method2: Histogram back-projection color segmentation (with Cb and Cr channels from YCbCr space) + post-processing.
-    test_method3: Histogram back-projection color segmentation (with Hue and Saturation channels from HSV space) + post-processing.
+    test_method1.m: HCbCr color segmentation with hand picked thresholds + post-processing.
+    test_method2.m: Histogram back-projection color segmentation (with Cb and Cr channels from YCbCr space) + post-processing.
+    test_method3.m: Histogram back-projection color segmentation (with Hue and Saturation channels from HSV space) + post-processing.
