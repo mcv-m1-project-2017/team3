@@ -25,3 +25,18 @@
     test_method1.m: HCbCr color segmentation with hand picked thresholds + post-processing.
     test_method2.m: Histogram back-projection color segmentation (with Cb and Cr channels from YCbCr space) + post-processing.
     test_method3.m: Histogram back-projection color segmentation (with Hue and Saturation channels from HSV space) + post-processing.
+
+**Week 3:**
+
+    Fill the 'test_2017' and 'train_2017' folders with the test and train splits. 
+    Go to the 'week3' folder and execute the 'main.m' script to test the code with the validation set. 
+    Task 1 is implemented in the /Compute_Mask_Functions/CCL_filtering.m function.
+    Task 2 is implemented in the /Compute_Mask_Functions/SLW_filtering_basic.m function.
+    The multiple detections problem is adressed witht the /Compute_Mask_Functions/merge_windows.m function.
+    Task 3 is implemented in the /Compute_Mask_Functions/SLW_integral_image.m function.
+    Task 4 is implemented in the PerformanceAccumulationWindow.m and PerformanceEvaluationWindow.m functions.
+    The different strategies that we used to solve each task are commented in detail in the scripts. 
+    In order to generate the masks and window candidates for the test split, execute the 'test_methodX.m' scripts.
+    
+    test_method1.m: H-S color seg., + Hole fill. + Opening + Connected Components (CC) filtering based on aspect ratio and size.
+    test_method2.m: H-S color seg., + Hole fill. + Opening + Sliding window to filter CC based on filling ratio.
