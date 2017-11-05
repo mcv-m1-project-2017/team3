@@ -38,5 +38,17 @@
     The different strategies that we used to solve each task are commented in detail in the scripts. 
     In order to generate the masks and window candidates for the test split, execute the 'test_methodX.m' scripts.
     
-    test_method1.m: H-S color seg., + Hole fill. + Opening + Connected Components (CC) filtering based on aspect ratio and size.
+    test_method1.m: H-S color seg., + Hole fill. + Opening + Connected Components (CC) filtering based on form factor and size.
     test_method2.m: H-S color seg., + Hole fill. + Opening + Sliding window to filter CC based on filling ratio.
+
+**Week 4:**
+
+    Fill the 'test_2017' and 'train_2017' folders with the test and train splits. 
+    Go to the 'week4' folder and execute the 'main.m' script to test the code with the validation set. 
+    Task 1 is implemented in the /Compute_Mask_Functions/template_matching_corr.m function.
+    Task 2 is implemented in the /Compute_Mask_Functions/template_matching_DT.m  function.
+    The different strategies that we used to solve each task are commented in detail in the scripts. 
+    In order to generate the masks and window candidates for the test split, execute the 'test_methodX.m' scripts.
+    
+    test_method1.m: H-S color seg., + Hole fill. + Opening + CC filt. (form factor, size) + Template Matching (correlation)
+    test_method2.m: H-S color seg., + Hole fill. + Opening + CC filt. (form factor, size) + Template Matching (distance transform)
