@@ -1,7 +1,7 @@
 Copy here the correspondent folder from
 https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/mcg/
 
-Software based on the following sources:
+Software based on the following works:
 
 ```
 @inproceedings{APBMM2014,
