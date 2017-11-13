@@ -52,3 +52,16 @@
     
     test_method1.m: H-S color seg., + Hole fill. + Opening + CC filt. (form factor, size) + Template Matching (correlation)
     test_method2.m: H-S color seg., + Hole fill. + Opening + CC filt. (form factor, size) + Template Matching (distance transform)
+
+**Week 5:**
+
+    Fill the 'test_2017' and 'train_2017' folders with the test and train splits. 
+    Fill the mcg-2.0/pre-trained folder after donwloading the MCG code from the link below.
+    https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/mcg/
+    Go to the 'week5' folder and execute the 'main.m' script to test the code with the validation set. 
+    Task 1 and 2 are implemented in the /Compute_Mask_Functions/scg_segmentation.m function.
+    The different strategies that we used to solve each task are commented in detail in the scripts. 
+    In order to generate the masks and window candidates for the test split, execute the 'test_methodX.m' scripts.
+    
+    test_method1.m: SCG seg., + Hole fill. + Opening + CC filt. (form factor, size) + Template Matching (distance transform)
+    test_method2.m: SCG seg., + Hole fill. + Opening + CC filt. (form factor, size) + Hough Transfrom
