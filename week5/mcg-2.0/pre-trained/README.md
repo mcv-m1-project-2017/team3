@@ -3,6 +3,7 @@ https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/mcg/
 
 Software based on the following sources:
 
+```
 @inproceedings{APBMM2014,
   author = {Arbel\'{a}ez, P. and Pont-Tuset, J. and Barron, J. and Marques, F. and Malik, J.},
   title = {Multiscale Combinatorial Grouping},
@@ -17,5 +18,6 @@ Software based on the following sources:
  month = {March},
   year = {2015}
 }
+```
 
 All credit for the mcg-2.0 software goes to the authors mentioned above.
