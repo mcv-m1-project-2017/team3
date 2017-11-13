@@ -63,5 +63,5 @@
     The different strategies that we used to solve each task are commented in detail in the scripts. 
     In order to generate the masks and window candidates for the test split, execute the 'test_methodX.m' scripts.
     
-    test_method1.m: SCG seg., + Hole fill. + Opening + CC filt. (form factor, size) + Template Matching (distance transform)
-    test_method2.m: SCG seg., + Hole fill. + Opening + CC filt. (form factor, size) + Hough Transfrom
+    test_method1.m: SCG seg., + CC filt. (form factor, size) + Histogram Comparison + Template Matching (distance transform)
+    test_method2.m: SCG seg., + CC filt. (form factor, size) + Histogram Comparison + Hough Transfrom
